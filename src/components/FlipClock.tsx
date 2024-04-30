@@ -5,3 +5,5 @@ const FlipClock = () => {
         <div>Hello flip clock</div>
     )
 }
+
+export default FlipClock;

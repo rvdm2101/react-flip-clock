@@ -3,10 +3,18 @@
   "version": "1.0.0",
   "private": false,
   "description": "A flip clock component build in React",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "build": "babel src -d dist",
-    "prepublishOnly": "npm run build"
+    "build": "tsc"
   },
   "keywords": [
     "react",
@@ -16,13 +24,10 @@
   "author": "rvdm2101",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react": "^16.0.0"
   },
-  "dependencies": {
-    "@babel/cli": "^7.24.5",
-    "@babel/preset-env": "^7.24.5",
-    "@babel/preset-react": "^7.24.1"
-  },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
 }
