@@ -1,7 +1,7 @@
 import { memo } from "react";
 import usePrevious from "../utils/usePrevious";
 import { FlipClockNumberAnimation } from "./FlipClockNumberAnimation";
-import "./style.css";
+import "../assets/flipClock.css";
 
 interface FlipClockNumberProps {
   value: string;
