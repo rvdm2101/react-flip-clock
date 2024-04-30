@@ -1,7 +1,6 @@
 {
-  "name": "@rvdm2101/react-flip-clock",
-  "version": "1.0.0",
-  "private": false,
+  "name": "@millmen/react-flip-clock",
+  "version": "0.1.1",
   "description": "A flip clock component build in React",
   "main": "dist/index.js",
   "files": [
@@ -21,10 +20,10 @@
     "component",
     "npm"
   ],
-  "author": "rvdm2101",
+  "author": "millmen",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",
