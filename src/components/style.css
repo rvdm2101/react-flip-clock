@@ -1,0 +1,88 @@
+.flipClock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.flipClock-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.flipClock-block__title {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
+.flipClock-block__numbers {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+
+.flipClock-block--separator {
+    margin-top: 1rem;
+}
+
+.flipClock-block--separator.flipClock-block--separator--days {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+.flipClock-block--separator .flipClock-block__title {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.flipClock-number {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.75rem;
+    height: 2.25rem;
+    border-radius: 0.325rem;
+    background-color: #fff;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+@keyframes flipAnimation {
+    0% {
+        top: -3.25rem;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.flipClock-numbers {
+    position: absolute;
+    top: 0;
+}
+
+
+.flipClock-numbers.flipClock-numbers--flip {
+    animation: flipAnimation 0.5s forwards;
+}
+
+@media (min-width: 992px) {
+    .flipClock-block__title {
+        font-size: 1rem;
+    }
+
+    .flipClock-block--separator.flipClock-block--separator--days {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+  
+    .flipClock-block--separator .flipClock-block__title {
+        font-size: 2rem;
+    }
+
+    .flipClock-number {
+        width: 2.25rem;
+        height: 3.25rem;
+        font-size: 2rem;
+    }
+}
