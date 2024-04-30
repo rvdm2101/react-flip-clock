@@ -1,5 +1,5 @@
 import { memo, useEffect, useState } from "react";
-import "./style";
+import "./style.css";
 
 interface FlipClockNumberAnimationProps {
   value: string;

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { FlipClockNumber } from "./FlipClockNumber";
-import "./style";
+import "./style.css";
 
 interface FlipClockProps {
     countDownDate: Date;
