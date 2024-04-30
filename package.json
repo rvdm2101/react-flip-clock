@@ -1,6 +1,6 @@
 {
   "name": "@millmen/react-flip-clock",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "A flip clock component build in React",
   "main": "dist/index.js",
   "files": [
